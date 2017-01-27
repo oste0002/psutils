@@ -1,8 +1,6 @@
 #ifndef PSUTILS_H
 #define PSUTILS_H
 
-#include <sys/types.h>
-
 /* PGETS - (overflow) protected fgets
  *  char *str		- pointer to string
  *  ssize_t siz - size of str in bytes
@@ -10,7 +8,7 @@
  *  Note:		Because the last char is a terminating '\0', the str will at most
  *						contain siz-1 chars.
  */
-ssize_t pgets(char *str, ssize_t siz);
+size_t pgets(char *str, ssize_t siz);
 
 /* PGETC - (overflow) protected getchar
  *  char *c - pointer to char

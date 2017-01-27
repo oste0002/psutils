@@ -7,9 +7,9 @@
 #include "psutils.h"
 
 
-ssize_t pgets(char *str, ssize_t siz) {
+size_t pgets(char *str, ssize_t siz) {
 	char buf_ch;
-	int ch_i;
+	size_t ch_i;
 
 	// Initialize char array
 	memset(str, 0, siz);
